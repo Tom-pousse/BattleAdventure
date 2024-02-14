@@ -1,0 +1,41 @@
+﻿.Container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 18vh); /*82vh*/
+    background-color: black;
+}
+
+.SubContainer {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: lawngreen;
+   width: 50vh;
+   height: 50vh;
+   margin: auto;
+}
+
+.Cube {
+    z-index: 1;
+    position: relative;
+    min-height: max-content;
+    min-width: max-content;
+    width: calc(2vh );
+    height: calc(2vh );
+    background-color: red;
+    
+    
+}
+
+
+.CubeGen {
+    position: relative;
+    z-index: 0;
+    min-height: max-content;
+    min-width: max-content;
+    width: calc(2vh );
+    height: calc(2vh );
+    background-color: yellow;
+    border-radius: 2rem;
+}

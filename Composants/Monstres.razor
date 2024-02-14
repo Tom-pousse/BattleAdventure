@@ -1,0 +1,38 @@
+﻿@* <h3>Monstres</h3>
+
+<div class="card">
+    @if (Envoie)
+    {
+        <div class="card">
+            <div class="gray">Nom : @monstre.Nom</div>
+            <div class="gray">Type : @monstre.Type</div>
+            <div class="gray">Level : @monstre.Level</div>
+            <div class="gray">Exp:  @monstre.Experience</div>
+            <div class="gray">Point de vie : @monstre.Vie </div>
+            <div class="gray">Force: @monstre.Force</div>
+            <div class="gray">Endurance: @monstre.Endurance</div>
+            <div class="gray">Agilite: @monstre.Agilite</div>
+        </div>
+    }
+    else
+    {
+
+        <form @onsubmit="StatMonstre2">
+
+            <div class="gray">Nom : @monstre.Nom</div>
+            <div class="gray">Type : @monstre.Type</div>
+            <label class="gray" for="level">Level : @monstre.Level</label>
+            <input type="number" class="form-control" id="level" @bind="monstre.Level" />
+            <div class="gray">Exp:  @monstre.Experience</div>
+            <div class="gray">Point de vie : @monstre.Vie </div>
+            <div class="gray">Force: @monstre.Force</div>
+            <div class="gray">Endurance: @monstre.Endurance</div>
+            <div class="gray">Agilite: @monstre.Agilite</div>
+            <button type="submit">Valider</button>
+
+        </form>
+    }
+</div
+*@
+
+            <div class="Container"></div>

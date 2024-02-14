@@ -1,0 +1,23 @@
+﻿<div class="navbar">
+   
+    
+    <ul class="list">
+        <li class="item">
+            <a href="/" class="nav-link">Accueil</a>
+        </li>
+        @if (!connected)
+        {
+            
+        <li class="item">
+            <a href="/inscription" class="nav-link">Inscription/Connexion</a>
+            </li>
+        }else
+        {
+           <li class="item">
+            <div>Deconnexion</div>
+        </li> 
+        }
+        
+        
+    </ul>
+</div>

@@ -1,0 +1,63 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BattleAdventure
+build_property.RootNamespace = BattleAdventure
+build_property.ProjectDir = C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/Composants/Connexion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9zYW50c1xDb25uZXhpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tybzi0ql20
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/Composants/Inscription.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9zYW50c1xJbnNjcmlwdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-srdm52dvw2
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/Composants/Monstres.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9zYW50c1xNb25zdHJlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ucnxlauf5r
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/Composants/Navbar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9zYW50c1xOYXZiYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-gfjt9w1w0r
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/Composants/Snake.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9zYW50c1xTbmFrZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-cnjg4lulbu
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-xjp6wia83e
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/Pages/Inscription.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5zY3JpcHRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1dpjq1km19
+
+[C:/Users/8511264Z/source/repos/BattleAdventure/BattleAdventure/Pages/Jeu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmV1LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-w0gizmobbn

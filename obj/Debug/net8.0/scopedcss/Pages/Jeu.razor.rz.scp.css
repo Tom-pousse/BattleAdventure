@@ -1,0 +1,42 @@
+*[b-w0gizmobbn] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerCard[b-w0gizmobbn] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card[b-w0gizmobbn]{
+    border: solid 3px;
+    padding: 1vh;
+    background-color: #eaeaea
+}
+
+.gray[b-w0gizmobbn]{
+    background-color: white;
+    width: 100%;
+    margin: 0.5vh;
+    height: 3vh;
+}
+
+input[b-w0gizmobbn] {
+    border: none;
+    height: 3vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.class="damageColor"[b-w0gizmobbn]{
+    color : red;
+}
+
+.Baston[b-w0gizmobbn] {
+    font-weight: 700;
+    font-size: 50px;
+    border : none;
+    padding: 10vh
+}

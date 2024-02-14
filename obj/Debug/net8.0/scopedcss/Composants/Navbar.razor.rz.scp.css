@@ -1,0 +1,29 @@
+*[b-gfjt9w1w0r] {
+    padding: 0;
+    margin: 0;
+}
+
+.list[b-gfjt9w1w0r] {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight : 800;
+    text-decoration:none;
+    list-style : none;
+    padding: 0;
+}
+a:hover[b-gfjt9w1w0r]{
+    color: blue;
+    font-weight: bold;
+}
+
+a[b-gfjt9w1w0r] {
+    text-decoration: none;
+    color : black;
+}
+
+.navbar[b-gfjt9w1w0r]{
+    background-color: lightgray;
+    height:auto;
+    padding: 1vw;
+}

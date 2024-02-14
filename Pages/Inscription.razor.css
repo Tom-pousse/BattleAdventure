@@ -1,0 +1,12 @@
+﻿* {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.containerBouttonSwitch{
+    display: flex;
+    justify-content:center;
+    margin: 1vh
+}

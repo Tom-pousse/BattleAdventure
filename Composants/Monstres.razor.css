@@ -1,0 +1,11 @@
+﻿.containerCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    border: solid 3px;
+    padding: 1vh;
+    background-color: #eaeaea
+}

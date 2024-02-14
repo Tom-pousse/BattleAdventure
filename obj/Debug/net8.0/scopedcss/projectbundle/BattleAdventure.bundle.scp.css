@@ -1,0 +1,158 @@
+/* /Composants/Connexion.razor.rz.scp.css */
+*[b-tybzi0ql20] {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+/* /Composants/Inscription.razor.rz.scp.css */
+*[b-srdm52dvw2] {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+/* /Composants/Monstres.razor.rz.scp.css */
+.containerCard[b-ucnxlauf5r] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card[b-ucnxlauf5r] {
+    border: solid 3px;
+    padding: 1vh;
+    background-color: #eaeaea
+}
+/* /Composants/Navbar.razor.rz.scp.css */
+*[b-gfjt9w1w0r] {
+    padding: 0;
+    margin: 0;
+}
+
+.list[b-gfjt9w1w0r] {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight : 800;
+    text-decoration:none;
+    list-style : none;
+    padding: 0;
+}
+a:hover[b-gfjt9w1w0r]{
+    color: blue;
+    font-weight: bold;
+}
+
+a[b-gfjt9w1w0r] {
+    text-decoration: none;
+    color : black;
+}
+
+.navbar[b-gfjt9w1w0r]{
+    background-color: lightgray;
+    height:auto;
+    padding: 1vw;
+}
+/* /Composants/Snake.razor.rz.scp.css */
+.Container[b-cnjg4lulbu] {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 18vh); /*82vh*/
+    background-color: black;
+}
+
+.SubContainer[b-cnjg4lulbu] {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: lawngreen;
+   width: 50vh;
+   height: 50vh;
+   margin: auto;
+}
+
+.Cube[b-cnjg4lulbu] {
+    z-index: 1;
+    position: relative;
+    min-height: max-content;
+    min-width: max-content;
+    width: calc(2vh );
+    height: calc(2vh );
+    background-color: red;
+    
+    
+}
+
+
+.CubeGen[b-cnjg4lulbu] {
+    position: relative;
+    z-index: 0;
+    min-height: max-content;
+    min-width: max-content;
+    width: calc(2vh );
+    height: calc(2vh );
+    background-color: yellow;
+    border-radius: 2rem;
+}
+/* /Pages/Home.razor.rz.scp.css */
+*[b-xjp6wia83e] {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+/* /Pages/Inscription.razor.rz.scp.css */
+*[b-1dpjq1km19] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.containerBouttonSwitch[b-1dpjq1km19]{
+    display: flex;
+    justify-content:center;
+    margin: 1vh
+}
+/* /Pages/Jeu.razor.rz.scp.css */
+*[b-w0gizmobbn] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerCard[b-w0gizmobbn] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card[b-w0gizmobbn]{
+    border: solid 3px;
+    padding: 1vh;
+    background-color: #eaeaea
+}
+
+.gray[b-w0gizmobbn]{
+    background-color: white;
+    width: 100%;
+    margin: 0.5vh;
+    height: 3vh;
+}
+
+input[b-w0gizmobbn] {
+    border: none;
+    height: 3vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.class="damageColor"[b-w0gizmobbn]{
+    color : red;
+}
+
+.Baston[b-w0gizmobbn] {
+    font-weight: 700;
+    font-size: 50px;
+    border : none;
+    padding: 10vh
+}

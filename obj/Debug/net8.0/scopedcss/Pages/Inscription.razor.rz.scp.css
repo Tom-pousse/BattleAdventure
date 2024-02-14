@@ -1,0 +1,12 @@
+*[b-1dpjq1km19] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.containerBouttonSwitch[b-1dpjq1km19]{
+    display: flex;
+    justify-content:center;
+    margin: 1vh
+}

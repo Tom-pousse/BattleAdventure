@@ -1,0 +1,31 @@
+﻿@page "/Inscription"
+
+
+<PageTitle>Inscription</PageTitle>
+<BattleAdventure.Composants.Navbar></BattleAdventure.Composants.Navbar>
+
+
+
+@if (!logOrReg)
+{
+
+    <h1>Inscrivez vous !</h1>
+}
+else
+{
+    <h1>Connectez vous !</h1>
+}
+
+@if (!logOrReg)
+{
+    <BattleAdventure.Composants.Inscription ValeurDeUtilisateur="TransmissionDeValeur" />
+}
+else
+{
+ <BattleAdventure.Composants.Connexion></BattleAdventure.Composants.Connexion>
+
+}
+<div class="containerBouttonSwitch">
+
+<button  type="button" @onclick="InversLog">@info</button>
+</div>

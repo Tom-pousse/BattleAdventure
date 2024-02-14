@@ -1,0 +1,11 @@
+.containerCard[b-ucnxlauf5r] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card[b-ucnxlauf5r] {
+    border: solid 3px;
+    padding: 1vh;
+    background-color: #eaeaea
+}

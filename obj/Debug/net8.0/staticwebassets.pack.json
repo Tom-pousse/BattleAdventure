@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\obj\\Debug\\net8.0\\compressed\\15r39ds3ml.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BattleAdventure.styles.css",
+      "PackagePath": "staticwebassets\\BattleAdventure.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BattleAdventure.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BattleAdventure.props",
+      "PackagePath": "build\\BattleAdventure.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BattleAdventure.props",
+      "PackagePath": "buildMultiTargeting\\BattleAdventure.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BattleAdventure.props",
+      "PackagePath": "buildTransitive\\BattleAdventure.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
