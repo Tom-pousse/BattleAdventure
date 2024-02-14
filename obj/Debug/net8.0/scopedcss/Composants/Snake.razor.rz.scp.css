@@ -17,15 +17,13 @@
 }
 
 .Cube[b-cnjg4lulbu] {
-    z-index: 1;
+    z-index: 2;
     position: relative;
     min-height: max-content;
     min-width: max-content;
     width: calc(2vh );
     height: calc(2vh );
-    background-color: red;
-    
-    
+
 }
 
 
@@ -36,6 +34,6 @@
     min-width: max-content;
     width: calc(2vh );
     height: calc(2vh );
-    background-color: yellow;
-    border-radius: 2rem;
+    
+    
 }

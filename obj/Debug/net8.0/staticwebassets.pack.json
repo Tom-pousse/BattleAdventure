@@ -13,8 +13,40 @@
       "PackagePath": "staticwebassets\\BattleAdventure.styles.css"
     },
     {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\Monstre\\ChampR.png",
+      "PackagePath": "staticwebassets\\css\\Monstre\\ChampR.png"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\Monstre\\ChampV.png",
+      "PackagePath": "staticwebassets\\css\\Monstre\\ChampV.png"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\Monstre\\SerpR.png",
+      "PackagePath": "staticwebassets\\css\\Monstre\\SerpR.png"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\Monstre\\SerpVBg.png",
+      "PackagePath": "staticwebassets\\css\\Monstre\\SerpVBg.png"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\Monstre\\SldR.png",
+      "PackagePath": "staticwebassets\\css\\Monstre\\SldR.png"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\Monstre\\SldV.png",
+      "PackagePath": "staticwebassets\\css\\Monstre\\SldV.png"
+    },
+    {
       "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\img\\ours2BgC.png",
+      "PackagePath": "staticwebassets\\css\\img\\ours2BgC.png"
+    },
+    {
+      "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\css\\img\\oursBgC.png",
+      "PackagePath": "staticwebassets\\css\\img\\oursBgC.png"
     },
     {
       "Id": "C:\\Users\\8511264Z\\source\\repos\\BattleAdventure\\BattleAdventure\\wwwroot\\icon-192.png",

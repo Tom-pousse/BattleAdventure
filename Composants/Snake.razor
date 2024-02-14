@@ -1,11 +1,24 @@
-﻿<div class="Container">
+﻿
+
+<div class="Container">
 
 <div class="SubContainer" @onkeydown="Move" tabindex="0">
-    <div class="Cube" style="@CubeStyle">
+        @if (Movement == false)
+        {
+            
+        <div class="Cube" style="@CubeStyle">
+                <img src="/css/img/oursBgC.png" style="width: 3vh; height: 3vh;" />
+            </div>
+        }
+        else
+        {
+            <div class="Cube" style="@CubeStyle">
+                <img src="/css/img/ours2BgC.png" style="width: 3vh; height: 3vh;" />
+            </div>
+        }
 
-    </div>
-        <div class="CubeGen" style="@GenCube">
-
+    <div class="CubeGen" style="@GenCube">
+            <img src=@ImageDeMonstre style="width: 3vh; height: 3vh;" />
     </div>   
           
        

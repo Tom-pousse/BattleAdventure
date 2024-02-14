@@ -72,15 +72,13 @@ a[b-gfjt9w1w0r] {
 }
 
 .Cube[b-cnjg4lulbu] {
-    z-index: 1;
+    z-index: 2;
     position: relative;
     min-height: max-content;
     min-width: max-content;
     width: calc(2vh );
     height: calc(2vh );
-    background-color: red;
-    
-    
+
 }
 
 
@@ -91,8 +89,8 @@ a[b-gfjt9w1w0r] {
     min-width: max-content;
     width: calc(2vh );
     height: calc(2vh );
-    background-color: yellow;
-    border-radius: 2rem;
+    
+    
 }
 /* /Pages/Home.razor.rz.scp.css */
 *[b-xjp6wia83e] {
