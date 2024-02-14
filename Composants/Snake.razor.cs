@@ -7,17 +7,26 @@ namespace BattleAdventure.Composants
     public partial class Snake
     {
         readonly TabMonstres _ImageMonstre = new TabMonstres();
+        readonly TabTextCombats _Combats = new TabTextCombats();
+
         string ImageDeMonstre;
+        string EvenText = "";
+        string LeChoixDuCombatStyle = "display: none;";
+        string ReponseDuChoix = "";
+        string ChoixDuCombatBtnStyleOui = "display : none;";
+        
+
         int countX = 0;
         int countY =0;
-
         int PositionTop = 0;
         int PositionLeft = 1;
         int moved = 1;
-        
         int GenX = 0;
         int GenY = 3;
+
         bool Movement = false;
+        bool ChoixUser;
+        bool LockAction = false;
         
         
 
@@ -35,15 +44,14 @@ namespace BattleAdventure.Composants
 
         void Move(KeyboardEventArgs args)
         {
-
+            if (LockAction == false) { 
+            ChoixDuCombatBtnStyleOui = "display: none;";
             //Console.WriteLine("genX : " + GenX + "genY : " + GenY);
             //Console.WriteLine(args.Key);
             switch (args.Key.ToLower()) 
             {
                 case "z":
                     Movement = !Movement;
-
-
                     PositionTop -= moved; 
                     countX--;
                     if (countX <= -48)
@@ -55,8 +63,20 @@ namespace BattleAdventure.Composants
                     //if (countX == GenX && countY == (GenY+3))
                     if (PositionMiam(countX, countY) == true)
                     {
-                        
-                        MiamTest();
+                        EvenText = _Combats.simulateurDeReponse();
+                        LeChoixDuCombatStyle = "display: flex; justify-content: space-around;";
+                        if (ChoixUser)
+                        {
+                            
+                            ChoixUser = false;
+                            StateHasChanged();
+                            
+                        }
+                        else
+                        {
+
+                            StateHasChanged();
+                        }
                     }
                     break;
                 case "s":
@@ -71,11 +91,20 @@ namespace BattleAdventure.Composants
                     }
                     //if (countX == GenX && countY == (GenY + 3))
                     if (PositionMiam(countX, countY) == true)
-
                     {
-                        MiamTest();
-                        
+                        EvenText = _Combats.simulateurDeReponse();
+                        LeChoixDuCombatStyle = "display: flex; justify-content: space-around;";
+                        if (ChoixUser)
+                        {
+                          
+                            ChoixUser = false;
+                            StateHasChanged();
+                        }
+                        else
+                        {
 
+                            StateHasChanged();
+                        }
                     }
                     break;
                 case "q":
@@ -90,11 +119,20 @@ namespace BattleAdventure.Composants
                     }
                     //if (countX == GenX && countY == (GenY + 3))
                     if (PositionMiam(countX, countY) == true)
-
                     {
-                        MiamTest();
-                        
+                        EvenText = _Combats.simulateurDeReponse();
+                        LeChoixDuCombatStyle = "display: flex; justify-content: space-around;";
+                        if (ChoixUser)
+                        {
+                           
+                            ChoixUser = false;
+                            StateHasChanged();
+                        }
+                        else
+                        {
 
+                            StateHasChanged();
+                        }
                     }
                     break;
                 case "d":
@@ -109,17 +147,28 @@ namespace BattleAdventure.Composants
                     }
                     //if (GenX == countX)
                     if (PositionMiam(countX, countY) == true)
-
                     {
-                        MiamTest();
+                        EvenText = _Combats.simulateurDeReponse();
+                        LeChoixDuCombatStyle = "display: flex; justify-content: space-around;";
+                        if (ChoixUser)
+                        {
+                            
+                            ChoixUser = false;
+                            StateHasChanged();
+                            
+                        }
+                        else
+                        {
 
-
+                            StateHasChanged();
+                        }
                     }
                     break;
             }
+            }
             StateHasChanged();
             //Console.WriteLine("hauteurX :" + countX + ",largeurY: " + countY);
-                        //Console.WriteLine("genX : "+ GenX + "genY : "+ GenY);
+            //Console.WriteLine("genX : " + GenX + "genY : " + GenY);
 
         }
 
@@ -131,6 +180,7 @@ namespace BattleAdventure.Composants
             return x;
         }
 
+        //pour faire aparaitre un monstre aléatoirement
         public void MiamTest()
         {
             
@@ -139,26 +189,21 @@ namespace BattleAdventure.Composants
             ImageDeMonstre = _ImageMonstre.SelectMonstres();
             StateHasChanged();
 
-               
-            
-           
         }
 
+        //hitbox pour le monstre
         public bool PositionMiam(int X , int Y)
         {
            
             int[] carreX = { GenX - 1, GenX - 2, GenX - 3, GenX - 4, GenX - 5, GenX, GenX + 1, GenX + 2, GenX + 3};
             int[] carreY = { GenY, GenY + 1, GenY + 2, GenY + 3, GenY + 4, GenY + 5, GenY + 6, GenY + 7, GenY + 8 };
             if (carreX.Contains(X) && carreY.Contains(Y))
-            {
-                Console.WriteLine("correspondance trouvé !");
-                if (false)
                 {
-                    return true;
-                }else {
-                
-                   return false;
-                }
+
+                Console.WriteLine("correspondance trouvé !");
+                //on block les mouvement
+                LockAction = true;
+                return true;
                 
                 
             }
@@ -168,5 +213,31 @@ namespace BattleAdventure.Composants
             
         }
 
+        public void LeChoixDuCombatAccept()
+        {
+            ChoixUser = true;
+            LeChoixDuCombatStyle = "display: none;";
+            EvenText = "";
+            ChoixDuCombatBtnStyleOui = "display : flex;justify-content: space-around; font-size:x-large;font-weight:800;";
+            ReponseDuChoix = _Combats.simulateurDeReponseOui();
+            // voir pour le combat
+            MiamTest();
+            LockAction = false;
+
+        }
+        public void LeChoixDuCombatRefused()
+        {
+            ChoixUser = false;
+            LeChoixDuCombatStyle = "display: none;";
+            EvenText = "";
+            ChoixDuCombatBtnStyleOui = "display : flex;justify-content: space-around;font-size:x-large;font-weight:800;";
+            ReponseDuChoix = _Combats.simulateurDeReponseNon();
+            // voir pour la fuite
+            MiamTest();
+            LockAction = false;
+        }
+
     }
 }
+
+// voir pour des zone de soin, rajouter des hp / dgts , interface de combats

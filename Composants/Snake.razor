@@ -19,9 +19,19 @@
 
     <div class="CubeGen" style="@GenCube">
             <img src=@ImageDeMonstre style="width: 3vh; height: 3vh;" />
-    </div>   
-          
-       
+    </div>
+
 
 </div>
+<div class="ContainerText">
+        <p class="Text" style="@LeChoixDuCombatStyle">@EvenText</p>
+    <div style=@LeChoixDuCombatStyle>
+            <button @onclick="LeChoixDuCombatAccept">Au combat !</button>
+            <button @onclick="LeChoixDuCombatRefused">Fuyons !</button>
+    </div>
+        <div style="@ChoixDuCombatBtnStyleOui">@ReponseDuChoix</div>
+        
+       
+
+    </div>
 </div>

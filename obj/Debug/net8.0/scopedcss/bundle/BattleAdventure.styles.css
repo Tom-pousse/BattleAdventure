@@ -55,20 +55,41 @@ a[b-gfjt9w1w0r] {
 /* /Composants/Snake.razor.rz.scp.css */
 .Container[b-cnjg4lulbu] {
     display: flex;
+    flex-direction:column;
     justify-content: center;
     width: 100vw;
     height: calc(100vh - 18vh); /*82vh*/
     background-color: black;
+    margin: 0;
+    padding:0;
+}
+
+.ContainerText[b-cnjg4lulbu] {
+    background: gray;
+    width: 50vh;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    border:5px solid black;
+    border-radius: 20px;
+    
+
+}
+
+.Text[b-cnjg4lulbu]{
+    margin : 10px;
+    color: beige;
 }
 
 .SubContainer[b-cnjg4lulbu] {
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     background-color: lawngreen;
-   width: 50vh;
-   height: 50vh;
-   margin: auto;
+    width: 50vh;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Cube[b-cnjg4lulbu] {
