@@ -12,6 +12,20 @@
     background: aqua;
     height: 10vh;
     width: 100%;
+    animation: slideRight-b-krstoqwi87 0.7s ease-in 0s;
+    position:relative;
+    
+}
+@keyframes slideRight-b-krstoqwi87 {
+    0% {
+        transform: translateX(-250px);
+        opacity : 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity : 10;
+    }
 }
 
 .EnemiePosition[b-krstoqwi87]{
@@ -34,8 +48,20 @@
     order: 2;
     width: 100%;
     justify-content: center;
-    font-size: 36px;
+    font-size: 72px;
     font-weight: 800;
+    animation: pop-b-krstoqwi87 3s ease-in 0s;
+    }
+@keyframes pop-b-krstoqwi87 {
+    0% {
+        transform:scale(0.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 10;
+    }
 }
 
 .ContainerJoueur[b-krstoqwi87] {
@@ -44,6 +70,20 @@
     background: aqua;
     height: 10vh;
     width: 100%;
+    animation: slideLeft-b-krstoqwi87 0.7s ease-in 0s;
+    position: relative;
+}
+
+@keyframes slideLeft-b-krstoqwi87 {
+    0% {
+        transform: translateX(250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 10;
+    }
 }
 
 .JoueurPosition[b-krstoqwi87] {

@@ -244,7 +244,7 @@ namespace BattleAdventure.Composants
         {
             // Create a timer and set a two second interval.
             aTimer = new System.Timers.Timer();
-            aTimer.Interval = 4000;
+            aTimer.Interval = 2500;
 
             // Hook up the Elapsed event for the timer. 
 
