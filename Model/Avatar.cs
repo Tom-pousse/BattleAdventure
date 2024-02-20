@@ -2,14 +2,10 @@
 {
     public class Avatar
     {
-#pragma warning disable CS8618 // Un champ non-nullable doit contenir une valeur non-null lors de la fermeture du constructeur. Envisagez de déclarer le champ comme nullable.
-        public string Nom { get; set; }
-#pragma warning restore CS8618 // Un champ non-nullable doit contenir une valeur non-null lors de la fermeture du constructeur. Envisagez de déclarer le champ comme nullable.
-#pragma warning disable CS8618 // Un champ non-nullable doit contenir une valeur non-null lors de la fermeture du constructeur. Envisagez de déclarer le champ comme nullable.
-        public string Type { get; set; }
-#pragma warning restore CS8618 // Un champ non-nullable doit contenir une valeur non-null lors de la fermeture du constructeur. Envisagez de déclarer le champ comme nullable.
-        public int Level { get; set; }
-        public int Experience { get; set; }
+        public string Nom = "Winnie";
+        public string Type = "Ours";
+        public int Level = 1;
+        public int Experience = 0;
         public int Force { get; set; }
         public int Endurance { get; set; }
         public int Agilite { get; set; }
@@ -51,5 +47,15 @@
         {
             return $"\n Nom: {Nom}\n Type: {Type}\n Force: {Force}\n Endurance: {Endurance}\n Agilite: {Agilite}\n Points de vie: {Vie}\n Dommage: {Dommage}";
         }
+
+        Avatar LeNouveauJoueur = new Avatar()
+        {
+            Force = 5,
+            Agilite = 5,
+            Endurance = 5,
+            
+        };
+
+
     }
 }

@@ -43,7 +43,7 @@ namespace BattleAdventure.Composants
                 LeJoueur.Email = Email;
                 LeJoueur.MotDePasse = MotDePasse;
 
-
+                
 
                 Console.WriteLine($"Mon joueur: {LeJoueur}");
                 //Dans le modele de Joueur j'ai fais un overyde sur tostring pour afficher directement les valeur et eviter de faire cela : 

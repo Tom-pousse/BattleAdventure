@@ -1,0 +1,39 @@
+﻿<h3>Combats</h3>
+
+<div class="ContainerPrincipal" style="background : gray ; height : 50vh; width : 50vh; margin: auto;">
+    
+    <div class="ContainerEnemie">
+    
+        <img class="EnemiePosition" src="@DonneesDeLElementParent" />
+    
+    </div>
+
+         <div class="ContainerCommentaire">
+             
+       
+            <p> @MessageInfoCombat</p>
+        
+         </div>
+
+    
+
+        <div class="ContainerJoueur">
+        <img class="JoueurPosition" src="/css/img/oursBgC.png" />
+        <div class="Statistique">
+            <div class="ViePoints" style="width : @life % ;">hp</div>
+            <div class="Mana" style="width : @Mana %;"></div>
+        </div>
+        <div class="SelectAction">
+            <button class="Action" @onclick="Attaque">Attaque</button>
+            <button class="Action" @onclick="Items">Object</button>
+            <button class="Action" @onclick="Fuite">Fuir</button>
+        </div>
+        <div>
+    
+    </div>
+    </div>
+
+    </div>
+
+
+

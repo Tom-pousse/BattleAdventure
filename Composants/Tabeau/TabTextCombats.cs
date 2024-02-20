@@ -76,6 +76,8 @@
             string response2 = TaleauTextFuiteSufix[random.Next(0, TableauTextCombats.Length)];
             string result = response1 + response2;
             return result;
+            
         }
+       
     }
 }

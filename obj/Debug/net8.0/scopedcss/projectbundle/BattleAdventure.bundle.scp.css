@@ -1,3 +1,84 @@
+/* /Composants/Combats.razor.rz.scp.css */
+.ContainerPrincipal[b-krstoqwi87]{
+    display : flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+
+.ContainerEnemie[b-krstoqwi87] {
+    display: flex;
+    justify-content: right;
+    order: 1;
+    background: aqua;
+    height: 10vh;
+    width: 100%;
+}
+
+.EnemiePosition[b-krstoqwi87]{
+    height : auto;
+    width: 3vw;
+}
+
+.ContainerCommentaire[b-krstoqwi87] {
+    display : flex;
+    order: 2 ;
+    width: 100%;
+    justify-content: center;
+    font-size : 36px;
+    font-weight: 800;
+}
+
+.ContainerJoueur[b-krstoqwi87] {
+    display: flex;
+    order: 3;
+    background: aqua;
+    height: 10vh;
+    width: 100%;
+}
+
+.JoueurPosition[b-krstoqwi87] {
+    height: auto;
+    width: 10vw;
+    margin: auto;
+    
+}
+
+.SelectAction[b-krstoqwi87] {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+  
+    align-items: center;
+    margin : auto;
+}
+
+.Action[b-krstoqwi87]{
+    display : flex;
+    width : 5vw;
+    border : none;
+    background : none;
+    cursor: pointer;
+    margin: 0.3vh 0 0.3vh 0;
+}
+
+.Action:hover[b-krstoqwi87]{
+    font-size : 85%;
+    font-weight : 700;
+    
+}
+
+.Statistique[b-krstoqwi87]{
+    width: 20vw;
+    background : green;
+
+}
+
+.ViePoints[b-krstoqwi87] {
+    
+    height: 50%;
+    background: red;
+}
 /* /Composants/Connexion.razor.rz.scp.css */
 *[b-tybzi0ql20] {
     display: flex;

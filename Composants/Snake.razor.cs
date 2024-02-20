@@ -1,15 +1,24 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
 using System;
 using BattleAdventure.Composants.Tabeau;
+using Microsoft.AspNetCore.Components;
 
 namespace BattleAdventure.Composants
 {
     public partial class Snake
     {
+
+        
+        [Parameter]
+        public required string RecupDeSnake { get; set; }
+        //[Parameter]
+        //public EventCallback<string> MonCall { get; set; }
+
         readonly TabMonstres _ImageMonstre = new TabMonstres();
         readonly TabTextCombats _Combats = new TabTextCombats();
 
-        string ImageDeMonstre;
+        string ImagePourEnfant = "";
+        string ImageDeMonstre = "";
         string EvenText = "";
         string LeChoixDuCombatStyle = "display: none;";
         string ReponseDuChoix = "";
@@ -27,6 +36,7 @@ namespace BattleAdventure.Composants
         bool Movement = false;
         bool ChoixUser;
         bool LockAction = false;
+        bool CombatOn = false;
         
         
 
@@ -35,10 +45,12 @@ namespace BattleAdventure.Composants
 
         protected override void OnInitialized()
         {
-            ImageDeMonstre = _ImageMonstre.SelectMonstres();
             base.OnInitialized();
             GenX = RandomPos();
             GenY = RandomPos();
+            ImageDeMonstre = _ImageMonstre.SelectMonstres();
+            ImagePourEnfant = ImageDeMonstre;
+            Console.WriteLine(ImageDeMonstre);
             //Console.WriteLine("genX : "+ GenX + "genY : "+ GenY);
         }
 
@@ -213,8 +225,9 @@ namespace BattleAdventure.Composants
             
         }
 
-        public void LeChoixDuCombatAccept()
+        public async Task LeChoixDuCombatAccept()
         {
+            //await MonCall.InvokeAsync(RecupDeSnake);
             ChoixUser = true;
             LeChoixDuCombatStyle = "display: none;";
             EvenText = "";
@@ -223,7 +236,7 @@ namespace BattleAdventure.Composants
             // voir pour le combat
             MiamTest();
             LockAction = false;
-
+            CombatOn = true;
         }
         public void LeChoixDuCombatRefused()
         {
@@ -235,6 +248,12 @@ namespace BattleAdventure.Composants
             // voir pour la fuite
             MiamTest();
             LockAction = false;
+            CombatOn = false;
+        }
+
+        public void RecupSwitchFuite(bool x)
+        {
+            CombatOn = false;
         }
 
     }

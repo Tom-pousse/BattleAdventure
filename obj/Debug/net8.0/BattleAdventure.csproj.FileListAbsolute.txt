@@ -1035,3 +1035,4 @@ C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\refint\BattleAdventure.dll
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\BattleAdventure.pdb
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\ref\BattleAdventure.dll
+C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\scopedcss\Composants\Combats.razor.rz.scp.css

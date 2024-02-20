@@ -1,8 +1,13 @@
-﻿
+﻿@using BattleAdventure.Composants
 
 <div class="Container">
+    @if (CombatOn == true)
+    {
 
-<div class="SubContainer" @onkeydown="Move" tabindex="0">
+        <Combats DonneesDeLElementParent="@ImagePourEnfant" EventCallback="RecupSwitchFuite"></Combats>
+    }else{
+    
+    <div class="SubContainer" @onkeydown="Move" tabindex="0">
         @if (Movement == false)
         {
             
@@ -33,5 +38,6 @@
         
        
 
-    </div>
+        </div>
+   }
 </div>
