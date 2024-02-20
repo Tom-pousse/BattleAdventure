@@ -2,13 +2,21 @@
 using System;
 using BattleAdventure.Composants.Tabeau;
 using Microsoft.AspNetCore.Components;
+using BattleAdventure.Model;
 
 namespace BattleAdventure.Composants
 {
     public partial class Snake
     {
+        readonly Avatar LeNouveauJoueur = new Avatar()
+        {
+            Force = 5,
+            Agilite = 5,
+            Endurance = 5,
 
+        };
         
+
         [Parameter]
         public required string RecupDeSnake { get; set; }
         //[Parameter]
@@ -52,6 +60,12 @@ namespace BattleAdventure.Composants
             ImagePourEnfant = ImageDeMonstre;
             Console.WriteLine(ImageDeMonstre);
             //Console.WriteLine("genX : "+ GenX + "genY : "+ GenY);
+            int dmg = LeNouveauJoueur.CalculDamage(LeNouveauJoueur);
+            int vie = LeNouveauJoueur.CalculVie(LeNouveauJoueur);
+            LeNouveauJoueur.Vie = vie;
+            LeNouveauJoueur.Dommage = dmg;
+            Console.WriteLine(LeNouveauJoueur);
+            
         }
 
         void Move(KeyboardEventArgs args)
@@ -232,7 +246,7 @@ namespace BattleAdventure.Composants
             LeChoixDuCombatStyle = "display: none;";
             EvenText = "";
             ChoixDuCombatBtnStyleOui = "display : flex;justify-content: space-around; font-size:x-large;font-weight:800;";
-            ReponseDuChoix = _Combats.simulateurDeReponseOui();
+            
             // voir pour le combat
             MiamTest();
             LockAction = false;
@@ -253,8 +267,13 @@ namespace BattleAdventure.Composants
 
         public void RecupSwitchFuite(bool x)
         {
+            
             CombatOn = false;
+
         }
+
+        
+        
 
     }
 }

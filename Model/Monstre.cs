@@ -1,4 +1,6 @@
-﻿namespace BattleAdventure.Model
+﻿using BattleAdventure.Composants;
+
+namespace BattleAdventure.Model
 {
     public class Monstre
     {
@@ -17,22 +19,22 @@
         public int Dommage { get; set; }
 
         Random random = new Random();
-        public int CalculDamage()
+        public int CalculDamage(Monstre monstre)
         {
             int Critique = random.Next(1, 3);
-            int DegatTotal = (Force * 4) + (Critique * Agilite);
+            int DegatTotal = (monstre.Force * 4) + (Critique * Agilite);
 
             return DegatTotal;
         }
 
-        public int CalculVie()
+        public int CalculVie(Monstre monstre)
         {
-            int Hp = (Endurance * 10) + (Level * 80) + (Agilite * 1) + (Force * 2);
+            int Hp = (monstre.Endurance * 10) + (monstre.Level * 80) + (monstre.Agilite * 1) + (monstre.Force * 2);
 
             return Hp;
         }
 
-        public int Attaque(Monstre monstreA, Monstre monstreB)
+        public int Attaque(Monstre monstreA, Avatar monstreB)
         {
             if (monstreB.Vie < 0 || monstreA.Vie < 0)
             {
@@ -40,7 +42,7 @@
             }
             else
             {
-                CalculDamage();
+                CalculDamage(monstreA);
                 monstreB.Vie -= monstreA.Dommage;
                 Console.WriteLine(monstreB.Vie);
             }

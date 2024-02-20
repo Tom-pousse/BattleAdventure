@@ -3,7 +3,21 @@
 <div class="ContainerPrincipal" style="background : gray ; height : 50vh; width : 50vh; margin: auto;">
     
     <div class="ContainerEnemie">
-    
+        <div class="SelectAction">
+            <div>
+                <div class="Action1" @onclick="Attaquer">Attaquer</div>
+            </div>
+
+            <div class="Action1" @onclick="Fuite">Fuir</div>
+        </div>
+        <div class="Statistique">
+
+            <div class="ViePointsMonstre" style="width : @LiveMonster%;">hp</div>
+
+            <div class="ManaMonstre" style="width : @ManaMonster%;"></div>
+        </div>
+        <div>
+        </div>
         <img class="EnemiePosition" src="@DonneesDeLElementParent" />
     
     </div>
@@ -18,15 +32,35 @@
     
 
         <div class="ContainerJoueur">
+
         <img class="JoueurPosition" src="/css/img/oursBgC.png" />
         <div class="Statistique">
-            <div class="ViePoints" style="width : @life % ;">hp</div>
-            <div class="Mana" style="width : @Mana %;"></div>
+            
+                            <div class="ViePoints" style="width : @life%;">hp</div>
+
+            <div class="Mana" style="width : @Mana%;"></div>
         </div>
         <div class="SelectAction">
-            <button class="Action" @onclick="Attaque">Attaque</button>
-            <button class="Action" @onclick="Items">Object</button>
-            <button class="Action" @onclick="Fuite">Fuir</button>
+            <div>
+                @if (Cliquer){
+                <button class="Action1" @onclick="Attaquer" >Attaquer</button>
+                }else
+                {
+                    <button class="Action1" @onclick="Attaquer" disabled>Attaquer</button>
+
+                }
+
+            </div>
+
+            <button class="Action1" @onclick="Items" disabled>Object (comming soon)</button>
+            @if (Cliquer)
+            {
+                <button class="Action1" @onclick="Fuite">Fuir</button>
+            }else
+            {
+                <button class="Action1" @onclick="Fuite" disabled>Fuir</button>
+                            
+}
         </div>
         <div>
     

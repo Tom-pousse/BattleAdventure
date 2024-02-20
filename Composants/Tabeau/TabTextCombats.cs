@@ -19,21 +19,9 @@
              "Et donc ?",
          };
 
-        string[] TableauTextFight = new string[]
-         {
-            "vous brandissez votre épé !",
-             "vous approchez la bête !",
-             "vous criez fort et foncez sur l'enemie !"
-             
-         };
+        
 
-        string[] TableauTextFightPrefix = new string[]
-        {
-            "Après une courte réflexion, ",
-             "Sans sourciller, ",
-             "Tel un Ours mal léché, ",
-             "N'écoutant que votre courage, "
-        };
+        
 
         string[] TaleauTextFuite = new string[]
         {
@@ -55,25 +43,18 @@
         {
             Random random = new Random();
             string response1 = TableauTextCombats[random.Next(0, TableauTextCombats.Length)];
-            string response2 = TableauTextQuestion[random.Next(0, TableauTextCombats.Length)];
-            string result = response1 + response2;
+            string response2 = TableauTextQuestion[random.Next(0, TableauTextQuestion.Length)];
+            string result = response1 +"\n"+ response2;
             return result;
         }
 
-        public string simulateurDeReponseOui()
-        {
-            Random random = new Random();
-            string response1 = TableauTextCombats[random.Next(0, TableauTextCombats.Length)];
-            string response2 = TableauTextFight[random.Next(0, TableauTextCombats.Length)];
-            string result = response1 + response2;
-            return result;
-        }
+        
 
         public string simulateurDeReponseNon()
         {
             Random random = new Random();
-            string response1 = TaleauTextFuite[random.Next(0, TableauTextCombats.Length)];
-            string response2 = TaleauTextFuiteSufix[random.Next(0, TableauTextCombats.Length)];
+            string response1 = TaleauTextFuite[random.Next(0, TaleauTextFuite.Length)];
+            string response2 = TaleauTextFuiteSufix[random.Next(0, TaleauTextFuiteSufix.Length)];
             string result = response1 + response2;
             return result;
             

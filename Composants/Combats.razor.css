@@ -16,15 +16,25 @@
 
 .EnemiePosition{
     height : auto;
-    width: 3vw;
+    width: 10vw;
+}
+
+.ViePointsMonstre{
+    background : red;
+    height : 50%;
+}
+
+.ManaMonstre{
+    background: green;
+    height: 50%;
 }
 
 .ContainerCommentaire {
-    display : flex;
-    order: 2 ;
+    display: flex;
+    order: 2;
     width: 100%;
     justify-content: center;
-    font-size : 36px;
+    font-size: 36px;
     font-weight: 800;
 }
 
@@ -52,7 +62,7 @@
     margin : auto;
 }
 
-.Action{
+.Action1{
     display : flex;
     width : 5vw;
     border : none;
@@ -69,12 +79,16 @@
 
 .Statistique{
     width: 20vw;
-    background : green;
-
-}
+    background : gray;
+    }
 
 .ViePoints {
     
     height: 50%;
     background: red;
+}
+
+.Mana {
+    height: 50%;
+    background: green;
 }

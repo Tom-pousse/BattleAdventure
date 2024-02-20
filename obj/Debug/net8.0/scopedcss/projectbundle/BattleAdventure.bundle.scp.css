@@ -17,15 +17,25 @@
 
 .EnemiePosition[b-krstoqwi87]{
     height : auto;
-    width: 3vw;
+    width: 10vw;
+}
+
+.ViePointsMonstre[b-krstoqwi87]{
+    background : red;
+    height : 50%;
+}
+
+.ManaMonstre[b-krstoqwi87]{
+    background: green;
+    height: 50%;
 }
 
 .ContainerCommentaire[b-krstoqwi87] {
-    display : flex;
-    order: 2 ;
+    display: flex;
+    order: 2;
     width: 100%;
     justify-content: center;
-    font-size : 36px;
+    font-size: 36px;
     font-weight: 800;
 }
 
@@ -53,7 +63,7 @@
     margin : auto;
 }
 
-.Action[b-krstoqwi87]{
+.Action1[b-krstoqwi87]{
     display : flex;
     width : 5vw;
     border : none;
@@ -70,14 +80,18 @@
 
 .Statistique[b-krstoqwi87]{
     width: 20vw;
-    background : green;
-
-}
+    background : gray;
+    }
 
 .ViePoints[b-krstoqwi87] {
     
     height: 50%;
     background: red;
+}
+
+.Mana[b-krstoqwi87] {
+    height: 50%;
+    background: green;
 }
 /* /Composants/Connexion.razor.rz.scp.css */
 *[b-tybzi0ql20] {

@@ -4,7 +4,7 @@
     @if (CombatOn == true)
     {
 
-        <Combats DonneesDeLElementParent="@ImagePourEnfant" EventCallback="RecupSwitchFuite"></Combats>
+        <Combats DonneesDeLElementParent="@ImagePourEnfant" MonJoueur="@LeNouveauJoueur" EventCallback="RecupSwitchFuite"></Combats>
     }else{
     
     <div class="SubContainer" @onkeydown="Move" tabindex="0">

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BattleAdventure",
   "resources": {
-    "hash": "sha256-2WYYk6ILxfPgHD3d8/aSum6PEd/ixqcy5QQUyl0RQWc=",
+    "hash": "sha256-zmawxvimOmSH6OR1Mp1v+7BQWlsZ0H8/f2Z3dJPAk6c=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.zuyhfqselc.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-EpWTfh4m/hEcXRFYMCR9YeYHwdUJgcm1laBaxWfq2S4=",
       "netstandard.wasm": "sha256-2kH24/YfHmU3B4eYRyRmiwebYROM4+B9eDWKvMnUdP8=",
       "System.Private.CoreLib.wasm": "sha256-CsySKiP7HYY1pS8LTDE60EkqiX5oHb3WoEZHDNd1yK0=",
-      "BattleAdventure.wasm": "sha256-Y7zfdAl6TdkZ6xmh1cW9LIj1afkkEqCfUaGs32vCko4="
+      "BattleAdventure.wasm": "sha256-Qb109NxCI8bpWwQdXorZJPE37NOIvzAhL+0CSt1zYbA="
     },
     "pdb": {
-      "BattleAdventure.pdb": "sha256-1fRZy+P3ijxfN1YxNxjLUadwkNoKuDi/9qOd1iD6nhc="
+      "BattleAdventure.pdb": "sha256-e0D/om6gkOzO37fCa+8KjG9XuewLgXDVSL770YMkMpU="
     }
   },
   "cacheBootResources": true,

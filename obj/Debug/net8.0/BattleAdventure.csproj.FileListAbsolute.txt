@@ -615,6 +615,7 @@ C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\BattleAdventure.AssemblyInfo.cs
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\BattleAdventure.csproj.CoreCompileInputs.cache
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\BattleAdventure.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\BattleAdventure.sourcelink.json
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.wasm
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.Forms.wasm
@@ -816,6 +817,7 @@ C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BattleAdventure.props
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BattleAdventure.props
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\scopedcss\Composants\Combats.razor.rz.scp.css
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\scopedcss\Composants\Connexion.razor.rz.scp.css
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\scopedcss\Composants\Inscription.razor.rz.scp.css
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\scopedcss\Composants\Monstres.razor.rz.scp.css
@@ -1035,4 +1037,3 @@ C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\refint\BattleAdventure.dll
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\BattleAdventure.pdb
 C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\ref\BattleAdventure.dll
-C:\Users\8511264Z\source\repos\BattleAdventure\BattleAdventure\obj\Debug\net8.0\scopedcss\Composants\Combats.razor.rz.scp.css
